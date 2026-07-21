@@ -50,18 +50,15 @@ const QUICK_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="relative w-full py-24 md:py-24">
+    <footer className="relative w-full pb-6 pt-24 md:pt-24">
       <div className="container">
-        {/* 🎴 Outer Rounded Card Container matching Framer layout */}
         <div
           className="group relative w-full h-min flex-none bg-white border-2 border-white rounded-[32px] sm:rounded-[40px] p-8 sm:p-12 md:p-14 shadow-[0_10px_40px_rgba(0,0,0,0.02)] overflow-hidden z-0"
           style={{
             willChange: "var(--framer-will-change-override, transform)",
           }}
         >
-          {/* Main Footer Grid Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 border-b border-neutral-100">
-            {/* 👈 Left Column: Agency Branding */}
             <div className="lg:col-span-5 flex flex-col items-start text-left gap-4">
               <div className="flex items-center gap-2.5">
                 <Link href="#" className="font-figtree flex items-center gap-2">
@@ -78,11 +75,7 @@ export default function Footer() {
                 and grow your business.
               </p>
             </div>
-
-            {/* Spacer for Desktop */}
             <div className="hidden lg:block lg:col-span-1" />
-
-            {/* 🔗 Middle Column: Quick Links */}
             <div className="lg:col-span-3 flex flex-col items-start text-left gap-4">
               <h4 className="font-poppins text-base font-bold text-brand-primary">
                 Quick Links
@@ -101,17 +94,15 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* 📬 Right Column: Get in Touch Profile */}
             <div className="lg:col-span-3 flex flex-col items-start text-left gap-5">
               <h4 className="font-poppins text-base font-bold text-brand-primary">
                 Get in touch
               </h4>
 
-              {/* Founder Avatar & Title Block */}
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full overflow-hidden border border-neutral-200 shrink-0">
                   <img
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+                    src="/owner.png"
                     alt="Satish Rawat"
                     className="w-full h-full object-cover"
                   />
@@ -121,7 +112,11 @@ export default function Footer() {
                     <span className="font-poppins text-base font-bold text-neutral-900">
                       Satish Rawat
                     </span>
-                    <CheckCircle2 className="w-4 h-4 text-brand-primary fill-brand-primary/10 shrink-0" />
+                    <img
+                      src="/tick-icon.png"
+                      alt="Satish Rawat"
+                      className="w-4 h-4 object-cover"
+                    />
                   </div>
                   <span className="font-figtree text-xs text-neutral-500 font-medium">
                     Founder & Lead Developer

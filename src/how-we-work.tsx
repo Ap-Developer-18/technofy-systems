@@ -70,23 +70,21 @@ const STEPS_DATA = [
 export default function HowWeWork() {
   return (
     <section className="relative w-full pt-24 overflow-hidden">
-      {/* Background Ambient Glow */}
       <div className="container">
-        {/* Upper Split Block */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-12 w-full lg:mb-16">
+        <div className="grid grid-cols-1 gap-4 sm:gap-6">
           <div className="lg:col-span-6 flex flex-col items-start text-left gap-6">
             <SectionHeader
               badgeText="How We Work"
               title="Simple, Transparent Development Process"
               description="We understand your goals, design the solution, build with clean code, and test everything before launch—keeping you involved at every step."
-              align="left"
+              align="center"
             />
           </div>
-          <div className="lg:col-span-6 w-full flex justify-center items-center bg-white rounded-3xl overflow-hidden sm:p-4">
+          <div className="lg:col-span-6 sm:w-4/5 mx-auto">
             <img
               src="/how-we-work.png"
               alt="how we work"
-              className="w-full aspect-4/3 object-contain"
+              className="w-full contrast-200 object-contain"
             />
           </div>
         </div>

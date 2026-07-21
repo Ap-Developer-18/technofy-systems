@@ -77,7 +77,7 @@ export default function SectionHeader({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className={`font-figtree max-sm:text-sm font-semibold text-neutral-500 leading-relaxed max-w-2xl ${alignmentClasses.description}`}
+          className={`font-figtree font-semibold text-neutral-500 leading-relaxed max-w-2xl ${alignmentClasses.description}`}
         >
           {description}
         </motion.p>

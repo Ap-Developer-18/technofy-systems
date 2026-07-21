@@ -6,6 +6,25 @@ import { Menu, X } from "lucide-react";
 import Button from "./button";
 import Link from "next/link";
 
+const navitems = [
+  {
+    label: "Our Projects",
+    path: "#projects",
+  },
+  {
+    label: "How We Work",
+    path: "#how-we-work",
+  },
+  {
+    label: "Our Services",
+    path: "#our-services",
+  },
+  {
+    label: "Faqs",
+    path: "#engineering-blueprint",
+  },
+];
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -13,7 +32,6 @@ export default function Navbar() {
     <nav className="w-full fixed top-4 inset-x-0 z-50 px-6 pointer-events-none">
       <div
         style={{
-          backgroundColor: "rgb(255, 255, 255)",
           borderRadius: "99px",
           boxShadow: "#00000014 0px 6px 14px 0px",
           transform: "none",
@@ -21,10 +39,10 @@ export default function Navbar() {
           opacity: 1,
           width: "100%",
         }}
-        className="max-w-309 mx-auto p-2 md:pl-6 md:pr-2 md:py-2 flex items-center justify-between pointer-events-auto transition-all duration-300"
+        className="max-w-309 mx-auto p-2 lg:pl-6 lg:pr-2 lg:py-2 flex items-center justify-between pointer-events-auto transition-all duration-300 bg-white"
       >
         {/* Brand Identity */}
-        <div className="shrink-0 pl-4 md:pl-0">
+        <div className="shrink-0 pl-4 lg:pl-0">
           <Link href="#" className="font-figtree flex items-center gap-2">
             <img width={44} height={44} src="/logo.svg" alt="logo" />
             <p className="text-lg font-extrabold leading-[100%] text-neutral-950">
@@ -33,36 +51,29 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Center Links (Desktop Matrix) */}
-        <div className="hidden md:flex items-center gap-8 lg:gap-10">
-          {[
-            "Services",
-            "Benefits",
-            "Case studies",
-            "About",
-            "Blogs",
-            "FAQs",
-          ].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase().replace(" ", "-")}`}
+        {/* Center Links (Desktop Matrix - now triggers on LG) */}
+        <div className="hidden lg:flex items-center gap-8 lg:gap-10">
+          {navitems.map((obj, index) => (
+            <Link
+              key={index}
+              href={`/${obj.path}`}
               className="font-figtree font-medium text-neutral-600 hover:text-neutral-950 transition-colors"
             >
-              {item}
-            </a>
+              {obj.label}
+            </Link>
           ))}
         </div>
 
         {/* Action Button Segment */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Button variant="primary">Book a free strategy call</Button>
         </div>
 
-        {/* Responsive Drawer Toggle */}
-        <div className="md:hidden pr-2">
+        {/* Responsive Drawer Toggle (visible below LG) */}
+        <div className="lg:hidden pr-2">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 text-neutral-600 hover:text-neutral-950 focus:outline-hidden cursor-pointer rounded-full hover:bg-neutral-50"
+            className="p-2 text-neutral-600 hover:text-neutral-950 focus:outline-none cursor-pointer rounded-full hover:bg-neutral-50"
             aria-label="Toggle Navigation Menu"
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -70,7 +81,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Symmetrical Dropdown Overlay for Mobile Screens */}
+      {/* Symmetrical Dropdown Overlay for Mobile & Tablet Screens */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -78,7 +89,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className="md:hidden mt-3 w-full bg-white border border-neutral-100 rounded-3xl p-4 shadow-xl pointer-events-auto"
+            className="lg:hidden mt-3 w-full bg-white/80 backdrop-blur-md border border-white/20 rounded-3xl p-4 shadow-xl pointer-events-auto"
           >
             <div className="space-y-1">
               {[
@@ -93,12 +104,12 @@ export default function Navbar() {
                   key={item}
                   href={`#${item.toLowerCase().replace(" ", "-")}`}
                   onClick={() => setIsOpen(false)}
-                  className="block px-4 py-3 font-figtree text-base font-medium text-neutral-600 hover:text-neutral-950 rounded-xl hover:bg-neutral-50/80 transition-colors"
+                  className="block px-4 py-3 font-figtree text-base font-medium text-neutral-600 hover:text-neutral-950 rounded-xl hover:bg-neutral-100/50 transition-colors"
                 >
                   {item}
                 </a>
               ))}
-              <div className="pt-4 border-t border-neutral-100 px-2 mt-2">
+              <div className="pt-4 border-t border-neutral-200/60 px-2 mt-2">
                 <Button variant="primary" className="w-full justify-between">
                   Book a free strategy call
                 </Button>

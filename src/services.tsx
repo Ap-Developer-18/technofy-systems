@@ -6,30 +6,30 @@ import SectionHeader from "./common/section-header";
 const SERVICES_DATA = [
   {
     id: 1,
-    title: "High-Performance Web Development",
+    title: "Web Development",
     description:
-      "Engineering lightning-fast, production-ready frontend layers using Next.js 19, React, and TypeScript, backed by optimized code clean architectures built to scale beautifully.",
+      "From sleek websites to powerful web applications, we build fast, scalable, and modern digital experiences tailored to your business goals.",
     imagePath: "/full-stack-web-architectures.png",
   },
   {
     id: 2,
-    title: "Premium E-Commerce & Web Systems",
+    title: "E-Commerce & Web Systems",
     description:
-      "Building seamless storefront frameworks, custom internal portals, state containers, and secure client-side mutations tailored to drive conversions and operational traction.",
+      "We build seamless online stores and custom web portals designed to streamline your operations and drive real revenue growth.",
     imagePath: "/premium-saas.png",
   },
   {
     id: 3,
-    title: "Native Android & iOS Applications",
+    title: "Mobile App Development",
     description:
-      "Crafting high-end, responsive cross-platform mobile products deployed smoothly to production storefronts with fluid touch mechanics and light bundle weights.",
+      "Crafting high-performing iOS and Android apps with smooth user experience and native feel that users love.",
     imagePath: "/high-end-fluid.png",
   },
   {
     id: 4,
-    title: "Luxury Interactive Interface Layers",
+    title: "UI/UX & Interactive Design",
     description:
-      "Enhancing standard interfaces with high-fidelity fluid micro-interactions, responsive grid canvas elements, and smooth animations without expanding final bundle footprints.",
+      "Creating intuitive interfaces and responsive designs that captivate users and elevate your brand identity.",
     imagePath: "/resilient-infrastructure.png",
   },
 ];
@@ -43,11 +43,11 @@ export default function Services() {
           badgeVariant="primary"
           title={
             <>
-              Get Perfect Services To Elevate <br /> Your{" "}
-              <span className="text-brand-primary">Online Presence</span>
+              Services Built For{" "}
+              <span className="text-brand-primary">Your Growth</span>
             </>
           }
-          description="We replace fragile codebases with high-performance digital engines shaped by modern design principles. No basic templates, no slow execution."
+          description="From custom web apps to high-converting UI/UX designs, we deliver digital solutions that scale your business."
         />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mt-6">
           {SERVICES_DATA.map((service) => (
@@ -55,7 +55,7 @@ export default function Services() {
               key={service.id}
               className="flex flex-col justify-stretch items-start gap-6 w-full h-full p-6 bg-white border border-neutral-50 rounded-[20px] shadow-[0_2px_5px_#00000005,0_10px_10px_#00000005] text-left group overflow-hidden"
             >
-              {/* Image Container with Perfect Scaling and Center Alignment */}
+              {/* Image Container */}
               <div className="w-full h-80 p-4 bg-[#f9f9f9] rounded-xl flex items-center justify-center relative overflow-hidden shrink-0">
                 <img
                   src={service.imagePath}
@@ -65,11 +65,11 @@ export default function Services() {
                 />
               </div>
 
-              <div className="space-y-6 w-full">
-                <h3 className="font-poppins text-lg font-semibold tracking-[-1px] leading-[130%] text-[#0a0a0a]">
+              <div className="space-y-3 w-full">
+                <h3 className="font-poppins text-xl font-semibold tracking-[-0.5px] leading-[130%] text-[#0a0a0a]">
                   {service.title}
                 </h3>
-                <p className="font-figtree text-base font-medium tracking-normal leading-[130%] text-[#404040]">
+                <p className="font-figtree text-base font-normal leading-[150%] text-[#525252]">
                   {service.description}
                 </p>
               </div>

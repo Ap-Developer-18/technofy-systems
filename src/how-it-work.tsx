@@ -90,38 +90,6 @@ export default function HowWeWork() {
             />
           </div>
         </div>
-
-        <div className="relative w-full lg:mt-12">
-          <div className="absolute top-12 left-[8%] right-[8%] hidden lg:flex items-center pointer-events-none z-0">
-            <div className="w-full h-0.5 border-t border-dashed border-neutral-950/50" />
-            <div className="w-0 h-0 border-t-[5px] border-t-transparent border-b-[5px] border-b-transparent border-l-[8px] border-l-[#1E5BFF]/50 -ml-1" />
-          </div>
-          <div className="flex flex-col max-lg:mt-22 lg:grid lg:grid-cols-5 gap-12 lg:gap-4 relative z-10 w-full items-center">
-            {STEPS_DATA.map((step) => (
-              <div
-                key={step.id}
-                className="w-full lg:max-w-none flex flex-col items-center text-center group cursor-pointer"
-              >
-                <div className="relative size-25 rounded-3xl bg-linear-to-br from-white to-[#F6F9FF] border border-[#E2E8F0] shadow-[0_8px_20px_-4px_rgba(30,91,255,0.06)] flex items-center justify-center transition-all duration-500 ease-out group-hover:-translate-y-2 group-hover:shadow-[0_16px_32px_-6px_rgba(30,91,255,0.15)] mb-6">
-                  <div className="absolute -inset-2 rounded-[28px] border-[1.5px] border-dashed border-neutral-950/20 pointer-events-none transition-all duration-500 group-hover:border-[#1E5BFF]/70" />
-                  <div className="relative z-10 flex items-center justify-center">
-                    {step.icon}
-                  </div>
-                  <span className="absolute -top-4 -right-4 w-7 h-7 bg-linear-to-tr from-brand-primary to-brand-success text-white text-[12px] font-bold rounded-full flex items-center justify-center shadow-[0_4px_12px_rgba(30,91,255,0.35)] font-poppins border-2 border-white z-20 transition-transform duration-300 group-hover:scale-110">
-                    {step.id}
-                  </span>
-                </div>
-                {/* Typography Block */}
-                <h4 className="font-poppins text-lg font-semibold text-neutral-900 mb-2 tracking-tight group-hover:text-[#1E5BFF] transition-colors duration-300">
-                  {step.title}
-                </h4>
-                <p className="font-figtree lg:text-xs font-medium leading-relaxed text-neutral-500 lg:max-w-[210px]">
-                  {step.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

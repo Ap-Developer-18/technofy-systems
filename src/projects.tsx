@@ -72,16 +72,15 @@ export default function Projects() {
       <div className="container relative z-10">
         {/* Section Header */}
         <SectionHeader
-          badgeText="Our Recent Work"
+          badgeText="Our Recent Projects"
           badgeVariant="primary"
           title={
             <>
-              Recent platforms that define <br className="hidden sm:block" />
-              our{" "}
-              <span className="text-brand-primary">engineering standards.</span>
+              Recent Work We're{" "}
+              <span className="text-brand-primary"> Proud Of</span>
             </>
           }
-          description="Explore our portfolio of premium custom platforms, cross-platform mobile interfaces, and high-performance layouts launched to production."
+          description="Real products. Real clients. Real impact. We build custom websites, dashboards, e-commerce stores, SaaS platforms, and more."
         />
 
         <div className="w-full mt-6 relative projects-swiper-container">
@@ -123,7 +122,7 @@ export default function Projects() {
 
                       {/* Content */}
                       <div className="space-y-3">
-                        <h3 className="font-poppins text-xl font-bold leading-tight text-neutral-900 line-clamp-2">
+                        <h3 className="font-poppins text-xl font-semibold leading-tight text-neutral-900 line-clamp-2">
                           {project.title}
                         </h3>
 

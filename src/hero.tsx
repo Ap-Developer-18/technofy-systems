@@ -12,10 +12,7 @@ export default function Hero() {
       <div className="container border-[#DFDFDF] text-center relative z-10">
         <div className="w-full h-fit pt-44">
           {/* Badge */}
-          <Badge>
-            Custom Websites • Mobile Apps • SEO Optimized • Fast Delivery
-          </Badge>
-
+          <Badge>Using Figma, React.js Next.js, WebFlow or Wordpress.</Badge>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -26,7 +23,7 @@ export default function Hero() {
             }}
             className="font-poppins mt-6 text-4xl lg:text-5xl font-semibold tracking-tight text-neutral-950 max-w-5xl mx-auto leading-[1.12] mb-3"
           >
-            Custom Websites & Mobile Apps Built to <br /> Grow Your Business.
+            We Craft Premium Websites & <br /> Apps For Businesses
           </motion.h1>
 
           <motion.p
@@ -39,11 +36,9 @@ export default function Hero() {
             }}
             className="font-figtree text-sm sm:text-base font-medium md:text-lg text-neutral-500 max-w-4xl mx-auto leading-relaxed mb-10 px-2"
           >
-            We design and develop high-performance websites, web applications,
-            and mobile apps that help businesses attract more customers, improve
-            search rankings, and deliver exceptional user experiences. From
-            strategy and design to development, deployment, and ongoing
-            support—we handle everything under one roof.
+            Partner with professionals to get stunning websites and apps, even
+            you don't have any tech knowledge. We handle everything from design
+            to launch.
           </motion.p>
 
           <motion.div

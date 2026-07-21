@@ -77,8 +77,8 @@ export default function HowWeWork() {
           <div className="lg:col-span-6 flex flex-col items-start text-left gap-6">
             <SectionHeader
               badgeText="How We Work"
-              title="We are not just building websites and apps."
-              description="We follow a structured, transparent process from day one. We begin by understanding your business, gathering your content, assets, and requirements, then carefully planning the project architecture before a single line of code is written. Once the strategy is clear, we design the complete user experience and share interactive previews for your feedback. Every revision is handled collaboratively until the design perfectly matches your vision. Only then do we move into development, writing clean, minimal, and scalable code that delivers exceptional performance, maintainability, and SEO. Every project is thoroughly tested, optimized, and documented before a smooth handover, ensuring you're ready to launch with confidence."
+              title="Simple, Transparent Development Process"
+              description="We understand your goals, design the solution, build with clean code, and test everything before launch—keeping you involved at every step."
               align="left"
             />
           </div>

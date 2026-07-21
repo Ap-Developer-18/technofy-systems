@@ -38,17 +38,13 @@ export default function Services() {
   return (
     <section className="relative w-full pt-24 md:pt-32">
       <div className="container relative z-10">
-        {/* 🏛️ Section Header Updated to Match Agency Positioning */}
         <SectionHeader
           badgeText="Our Services"
           badgeVariant="primary"
           title={
             <>
-              We build and scale platforms <br className="hidden sm:block" />
-              that{" "}
-              <span className="text-brand-primary">
-                dominate digital spaces.
-              </span>
+              Get Perfect Services To Elevate <br /> Your{" "}
+              <span className="text-brand-primary">Online Presence</span>
             </>
           }
           description="We replace fragile codebases with high-performance digital engines shaped by modern design principles. No basic templates, no slow execution."

@@ -1,3 +1,4 @@
+import Blogs from "@/src/blogs";
 import Footer from "@/src/common/footer";
 import Navbar from "@/src/common/navbar";
 import Faqs from "@/src/faqs";
@@ -20,6 +21,7 @@ export default function Home() {
       <Services />
       <Problems />
       <ToolsIntegrations />
+      <Blogs />
       <Faqs />
       <Footer />
     </>

@@ -52,15 +52,15 @@ const FAQS_DATA: FAQItem[] = [
 ];
 
 export default function Faqs() {
-  const [openId, setOpenId] = useState<number | null>(1); // First item open by default
+  const [openId, setOpenId] = useState<number | null>(1);
 
   const toggleFaq = (id: number) => {
     setOpenId(openId === id ? null : id);
   };
 
   return (
-    <section className="relative w-full pt-24">
-      <div className="container relative z-10 mx-auto px-4 max-w-4xl">
+    <section id="faqs" className="relative scroll-mt-8 w-full pt-24">
+      <div className="container relative z-10 lg:max-w-4xl">
         {/* Section Header */}
         <SectionHeader
           badgeText="Got Questions?"

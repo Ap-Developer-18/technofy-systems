@@ -112,7 +112,7 @@ export default function ToolsIntegrations() {
 
   return (
     <section className="relative w-full mt-24">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         {/* 🎴 Outer Card Container */}
         <div
           className="group relative w-full h-min flex-none flex flex-col lg:flex-row justify-between items-center bg-white border-2 border-white rounded-[32px] sm:rounded-[40px] p-5 sm:p-8 md:p-10 overflow-clip z-0 shadow-[0_10px_40px_rgba(0,0,0,0.02)] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12"
@@ -194,7 +194,7 @@ export default function ToolsIntegrations() {
           <div className="lg:col-span-6 w-full flex items-center justify-center relative min-h-[320px] sm:min-h-[440px] md:min-h-[500px] z-10 overflow-hidden sm:overflow-visible">
             <div className="relative flex items-center justify-center scale-[0.68] xs:scale-[0.8] sm:scale-90 md:scale-100 transition-transform duration-300">
               <OrbitRing
-                radius={90}
+                radius={80}
                 duration={20}
                 items={innerItems}
                 itemSizeClass="w-11 h-11 opacity-70"

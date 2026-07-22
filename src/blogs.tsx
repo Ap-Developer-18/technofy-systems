@@ -87,7 +87,7 @@ const BLOGS_DATA = [
 
 export default function Blogs() {
   return (
-    <section id="blogs" className="relative w-full pt-16 md:pt-24">
+    <section id="blogs" className="scroll-mt-6 relative w-full pt-16 md:pt-24">
       <div className="container relative z-10">
         {/* Section Header */}
         <SectionHeader

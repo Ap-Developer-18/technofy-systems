@@ -39,7 +39,7 @@ export default function SectionHeader({
 
   return (
     <div
-      className={`${alignmentClasses.wrapper} max-w-3xl mb-6 space-y-4 px-4 ${className}`}
+      className={`${alignmentClasses.wrapper} max-w-3xl mb-6 space-y-4 ${className}`}
     >
       <motion.div
         initial={{ opacity: 0, y: -8 }}

@@ -40,12 +40,22 @@ const SOCIAL_LINKS = [
 
 // Quick Links Array Data
 const QUICK_LINKS = [
-  { name: "Services", href: "#services" },
-  { name: "Benefits", href: "#benefits" },
-  { name: "Process", href: "#process" },
-  { name: "Case studies", href: "#projects" },
-  { name: "About", href: "#about" },
-  { name: "FAQs", href: "#faqs" },
+  {
+    name: "Our Projects",
+    href: "#projects",
+  },
+  {
+    name: "How We Work",
+    href: "#how-we-work",
+  },
+  {
+    name: "Our Services",
+    href: "#our-services",
+  },
+  {
+    name: "Blogs",
+    href: "#blogs",
+  },
 ];
 
 export default function Footer() {
@@ -53,12 +63,12 @@ export default function Footer() {
     <footer className="relative w-full pb-6 pt-24 md:pt-24">
       <div className="container">
         <div
-          className="group relative w-full h-min flex-none bg-white border-2 border-white rounded-[32px] sm:rounded-[40px] p-8 sm:p-12 md:p-14 shadow-[0_10px_40px_rgba(0,0,0,0.02)] overflow-hidden z-0"
+          className="group relative w-full h-min flex-none bg-white border-2 border-white rounded-[32px] sm:rounded-[40px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.02)] overflow-hidden z-0"
           style={{
             willChange: "var(--framer-will-change-override, transform)",
           }}
         >
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 border-b border-neutral-100">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 xl:gap-12 pb-12 border-b border-neutral-100">
             <div className="lg:col-span-5 flex flex-col items-start text-left gap-4">
               <div className="flex items-center gap-2.5">
                 <Link href="#" className="font-figtree flex items-center gap-2">

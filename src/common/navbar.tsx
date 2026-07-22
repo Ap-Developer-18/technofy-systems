@@ -20,8 +20,8 @@ const navitems = [
     path: "#our-services",
   },
   {
-    label: "Faqs",
-    path: "#engineering-blueprint",
+    label: "Blogs",
+    path: "#blogs",
   },
 ];
 
@@ -29,7 +29,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full fixed top-4 inset-x-0 z-50 px-6 pointer-events-none">
+    <nav className="w-full container left-1/2 -translate-x-1/2 fixed top-4 inset-x-0 z-50 px-6 pointer-events-none">
       <div
         style={{
           borderRadius: "99px",
@@ -43,12 +43,12 @@ export default function Navbar() {
       >
         {/* Brand Identity */}
         <div className="shrink-0 pl-4 lg:pl-0">
-          <Link href="#" className="font-figtree flex items-center gap-2">
+          <a href="/#" className="font-figtree flex items-center gap-2">
             <img width={44} height={44} src="/logo.svg" alt="logo" />
             <p className="text-lg font-extrabold leading-[100%] text-neutral-950">
               Technofy <br /> Systems
             </p>
-          </Link>
+          </a>
         </div>
 
         {/* Center Links (Desktop Matrix - now triggers on LG) */}
@@ -66,7 +66,9 @@ export default function Navbar() {
 
         {/* Action Button Segment */}
         <div className="hidden lg:block">
-          <Button variant="primary">Book a free strategy call</Button>
+          <Link href={"/get-a-quote"}>
+            <Button variant="primary">Get a quote</Button>
+          </Link>
         </div>
 
         {/* Responsive Drawer Toggle (visible below LG) */}
@@ -111,7 +113,7 @@ export default function Navbar() {
               ))}
               <div className="pt-4 border-t border-neutral-200/60 px-2 mt-2">
                 <Button variant="primary" className="w-full justify-between">
-                  Book a free strategy call
+                  Get a quote
                 </Button>
               </div>
             </div>

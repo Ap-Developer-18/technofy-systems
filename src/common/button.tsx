@@ -32,7 +32,7 @@ export default function Button({
     <motion.button
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
-      className={`inline-flex items-center justify-center gap-4 pl-7 pr-2.5 py-2.5 bg-neutral-950 text-white font-figtree text-sm font-medium rounded-full shadow-sm transition-colors duration-200 hover:bg-brand-primary cursor-pointer ${className}`}
+      className={`inline-flex items-center justify-center gap-4 pl-7 pr-2.5 py-2.5 bg-neutral-950 text-white font-figtree font-medium rounded-full shadow-sm transition-colors duration-200 hover:bg-brand-primary cursor-pointer ${className}`}
       {...motionProps}
     >
       {children}

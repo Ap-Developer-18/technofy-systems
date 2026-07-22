@@ -69,7 +69,10 @@ const STEPS_DATA = [
 
 export default function HowWeWork() {
   return (
-    <section className="relative w-full pt-24 overflow-hidden">
+    <section
+      id="how-we-work"
+      className="relative scroll-mt-8 w-full pt-24 overflow-hidden"
+    >
       <div className="container">
         <div className="grid grid-cols-1 gap-4 sm:gap-6">
           <div className="lg:col-span-6 flex flex-col items-start text-left gap-6">

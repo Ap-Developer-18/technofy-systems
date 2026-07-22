@@ -36,7 +36,7 @@ const SERVICES_DATA = [
 
 export default function Services() {
   return (
-    <section className="relative w-full pt-24 md:pt-32">
+    <section id="our-services" className="relative w-full pt-24 md:pt-32">
       <div className="container relative z-10">
         <SectionHeader
           badgeText="Our Services"
@@ -56,11 +56,11 @@ export default function Services() {
               className="flex flex-col justify-stretch items-start gap-6 w-full h-full p-6 bg-white border border-neutral-50 rounded-[20px] shadow-[0_2px_5px_#00000005,0_10px_10px_#00000005] text-left group overflow-hidden"
             >
               {/* Image Container */}
-              <div className="w-full h-80 p-4 bg-[#f9f9f9] rounded-xl flex items-center justify-center relative overflow-hidden shrink-0">
+              <div className="w-full h-50 lg:h-80 p-4 bg-[#f9f9f9] rounded-xl flex items-center justify-center relative overflow-hidden shrink-0">
                 <img
                   src={service.imagePath}
                   alt={service.title}
-                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                  className="w-full h-full scale-105 object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                   loading="lazy"
                 />
               </div>

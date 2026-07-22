@@ -8,6 +8,7 @@ interface ProfileCardProps {
   statusText?: string;
   imageUrl?: string;
   isOnline?: boolean;
+  phoneNumber?: string;
   onClick?: () => void;
 }
 
@@ -16,6 +17,7 @@ export default function ProfileBadge({
   statusText = "Online • Contact Now",
   imageUrl = "/owner.png",
   isOnline = true,
+  phoneNumber = "919990533555",
   onClick,
 }: ProfileCardProps) {
   const [isVisible, setIsVisible] = useState(true);
@@ -48,6 +50,18 @@ export default function ProfileBadge({
     };
   }, []);
 
+  // Handle WhatsApp Click Action
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    } else {
+      const message = encodeURIComponent(
+        `Hello ${name}, I saw your badge on Technofy Systems and want to discuss a project!`,
+      );
+      window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+    }
+  };
+
   return (
     // Fixed positioning in bottom-right corner
     <div className="fixed max-w-7xl px-6 left-1/2 -translate-x-1/2 mx-auto w-full bottom-6 flex justify-end right-6 z-50 pointer-events-auto">
@@ -62,7 +76,7 @@ export default function ProfileBadge({
               stiffness: 260,
               damping: 20,
             }}
-            onClick={onClick}
+            onClick={handleClick}
             className="inline-flex items-center gap-3.5 bg-white py-2.5 pl-3 pr-6 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.12)] border border-neutral-100/80 cursor-pointer hover:shadow-[0_12px_35px_rgba(0,0,0,0.18)] transition-shadow duration-300 select-none"
           >
             {/* Profile Image Container with Online Indicator */}

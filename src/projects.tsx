@@ -68,7 +68,7 @@ const PROJECTS_DATA = [
 
 export default function Projects() {
   return (
-    <section className="relative w-full pt-12">
+    <section id="projects" className="relative scroll-mt-20 w-full pt-12">
       <div className="container relative z-10">
         {/* Section Header */}
         <SectionHeader

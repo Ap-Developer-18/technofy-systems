@@ -5,8 +5,14 @@ import { motion } from "framer-motion";
 import Badge from "./common/badge";
 import Button from "./common/button";
 import AnimatedCards from "./common/animated-cards";
+import Link from "next/link";
 
 export default function Hero() {
+  const phoneNumber = "919990533555";
+  const defaultMessage = encodeURIComponent(
+    "Hello Technofy Systems! I would like to book a free consultation for my project.",
+  );
+
   return (
     <section className="relative w-full overflow-hidden">
       <div className="container border-[#DFDFDF] text-center relative z-10">
@@ -51,7 +57,13 @@ export default function Hero() {
             }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20 md:mb-28"
           >
-            <Button variant="primary">Book Free Consultation</Button>
+            <Link
+              href={`https://wa.me/${phoneNumber}?text=${defaultMessage}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="primary">Book Free Consultation</Button>
+            </Link>
           </motion.div>
 
           {/* Floating Cards */}

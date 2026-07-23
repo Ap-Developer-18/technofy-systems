@@ -1,6 +1,7 @@
 import { Clock, Calendar, Share2, CheckCircle2 } from "lucide-react";
 import Navbar from "@/src/common/navbar";
 import Footer from "@/src/common/footer";
+import Image from "next/image";
 
 export default function BlogDetailPage({
   params,
@@ -36,9 +37,11 @@ export default function BlogDetailPage({
           <div className="flex items-center justify-between pb-8 border-b border-neutral-100 lg:mb-8">
             <div className="flex items-center gap-3">
               <div className="w-11 h-11 rounded-full overflow-hidden border border-neutral-200">
-                <img
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+                <Image
+                  src="/owner.webp"
                   alt="Satish Rawat"
+                  width={44}
+                  height={44}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -47,7 +50,13 @@ export default function BlogDetailPage({
                   <span className="font-poppins text-sm font-bold text-neutral-900">
                     Satish Rawat
                   </span>
-                  <CheckCircle2 className="w-3.5 h-3.5 text-brand-primary fill-brand-primary/10" />
+                  <Image
+                    src="/tick-icon.webp"
+                    alt="Satish Rawat"
+                    width={16}
+                    height={16}
+                    className="object-cover"
+                  />
                 </div>
                 <span className="font-figtree text-xs text-neutral-500 font-medium">
                   Founder & Lead Developer • Technofy Systems
@@ -63,7 +72,7 @@ export default function BlogDetailPage({
           {/* Featured Image */}
           <div className="w-full h-80 sm:h-96 rounded-2xl mt-6 bg-[#f9f9f9] border border-neutral-100 flex items-center justify-center p-6 overflow-hidden mb-10">
             <img
-              src="/full-stack-web-architectures.png"
+              src="/full-stack-web-architectures.webp"
               alt="Next.js 19 Architecture"
               className="w-full h-full object-contain"
             />

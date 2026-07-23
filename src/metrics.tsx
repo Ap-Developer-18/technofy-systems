@@ -10,7 +10,7 @@ const METRICS_DATA = [
     label: "Conversion lift",
     subtext:
       "Average increase in user actions recorded after deploying high-end aesthetic interfaces.",
-    iconPath: "/tick-icon.png",
+    iconPath: "/tick-icon.webp",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const METRICS_DATA = [
     label: "Live platforms",
     subtext:
       "Premium websites and mobile applications successfully engineered and launched.",
-    iconPath: "/person-icon.png",
+    iconPath: "/person-icon.webp",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const METRICS_DATA = [
     label: "Fluid response",
     subtext:
       "Ultra-fast loading targets met across all desktop viewports and physical phone screens.",
-    iconPath: "/pipeline-icon.png",
+    iconPath: "/pipeline-icon.webp",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const METRICS_DATA = [
     label: "Saved off launches",
     subtext:
       "Production-ready boilerplate modules cutting down core rollout timelines.",
-    iconPath: "/rocket-icon.png",
+    iconPath: "/rocket-icon.webp",
   },
 ];
 

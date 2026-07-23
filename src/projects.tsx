@@ -16,7 +16,7 @@ const PROJECTS_DATA = [
     title: "Koncept Archidesign Consultants",
     description:
       "Premium architecture portfolio engineered for medium to large-scale sustainable enterprise structures, institutional planning layouts, and commercial developments.",
-    imagePath: "/koncept.png",
+    imagePath: "/koncept.webp",
     liveUrl: "https://koncept-archidesign-consultants.vercel.app/",
     tags: ["Next.js", "Tailwind CSS", "Aesthetic UI"],
   },
@@ -25,7 +25,7 @@ const PROJECTS_DATA = [
     title: "Traveller Cabs - Premium Fleet Rental",
     description:
       "A high-conversion transport booking engine deployed for premium vehicle travel management across Faridabad and North India regions.",
-    imagePath: "/traveller-cabs.png",
+    imagePath: "/traveller-cabs.webp",
     liveUrl: "https://traveller-cabs.vercel.app/",
     tags: ["React", "Custom Bookings", "Tailwind"],
   },
@@ -34,7 +34,7 @@ const PROJECTS_DATA = [
     title: "Trustified Loan - Capital Structuring Platform",
     description:
       "A secure commercial financial consulting portal featuring optimized cash flows, automated underwriting metrics, and transparent asset management panels.",
-    imagePath: "/trustified-loan.png",
+    imagePath: "/trustified-loan.webp",
     liveUrl: "https://indian-loan-advisor.vercel.app/",
     tags: ["Next.js 19", "TanStack Query", "Prisma"],
   },
@@ -43,7 +43,7 @@ const PROJECTS_DATA = [
     title: "J S Enterprises - Civil & MEP Contractor Hub",
     description:
       "Turnkey technology-driven infrastructure management portal built for corporate space engineering, electrical integration, and commercial fit-outs.",
-    imagePath: "/js-infra.png",
+    imagePath: "/js-infra.webp",
     liveUrl: "https://www.jseinfra.com/",
     tags: ["Next.js", "Tailwind CSS", "Optimization"],
   },
@@ -52,7 +52,7 @@ const PROJECTS_DATA = [
     title: "Udyora - Regulatory Compliance Gateway",
     description:
       "A centralized single-window coordination system designed to track complex regulatory approvals, zoning clearances, and tools prototyping lifecycle metrics.",
-    imagePath: "/udyora.png",
+    imagePath: "/udyora.webp",
     liveUrl: "https://www.udyora.com/",
     tags: ["TypeScript", "Modern UX", "Tailwind"],
   },
@@ -61,7 +61,7 @@ const PROJECTS_DATA = [
     title: "FinTrack - Mobile Expense Tracker Ecosystem",
     description:
       "A highly secure cross-platform mobile app engineered to process personal cash flow metrics, dynamic expense categorization, and multi-tenant ledger synchronization balances.",
-    imagePath: "/expense-tracker.png",
+    imagePath: "/expense-tracker.webp",
     liveUrl: "https://github.com/",
     tags: ["React Native", "PostgreSQL", "Mobile UI"],
   },

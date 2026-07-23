@@ -72,7 +72,7 @@ export default function Hero() {
             {/* <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden bg-white border-2 p-6 border-mauve-50">
               <img
                 className="object-contain w-full"
-                src="/hero.png"
+                src="/hero.webp"
                 alt="hero image"
               />
             </div> */}

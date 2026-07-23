@@ -113,7 +113,7 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full overflow-hidden border border-neutral-200 shrink-0 relative">
                   <Image
-                    src="/owner.png"
+                    src="/owner.webp"
                     alt="Satish Rawat"
                     fill
                     sizes="48px"
@@ -126,7 +126,7 @@ export default function Footer() {
                       Satish Rawat
                     </span>
                     <Image
-                      src="/tick-icon.png"
+                      src="/tick-icon.webp"
                       alt="Satish Rawat"
                       width={16}
                       height={16}

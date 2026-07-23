@@ -86,7 +86,7 @@ export default function HowWeWork() {
           </div>
           <div className="lg:col-span-6 sm:w-4/5 mx-auto">
             <Image
-              src="/how-we-work.png"
+              src="/how-we-work.webp"
               alt="how we work"
               width={1200}
               height={706}

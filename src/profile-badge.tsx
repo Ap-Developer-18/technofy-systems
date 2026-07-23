@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 interface ProfileCardProps {
   name?: string;
@@ -14,8 +15,8 @@ interface ProfileCardProps {
 
 export default function ProfileBadge({
   name = "Satish Rawat",
-  statusText = "Online • Contact Now",
-  imageUrl = "/owner.png",
+  statusText = "Online",
+  imageUrl = "/owner.webp",
   isOnline = true,
   phoneNumber = "919990533555",
   onClick,
@@ -81,9 +82,11 @@ export default function ProfileBadge({
           >
             {/* Profile Image Container with Online Indicator */}
             <div className="relative shrink-0">
-              <img
+              <Image
                 src={imageUrl}
                 alt={name}
+                width={44}
+                height={44}
                 className="w-12 h-12 rounded-full object-cover bg-blue-600"
               />
               {/* Green Online Dot */}

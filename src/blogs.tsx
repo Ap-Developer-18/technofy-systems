@@ -16,7 +16,7 @@ const BLOGS_DATA = [
     title: "Why Next.js 19 & Server Actions Outperform Traditional Monoliths",
     description:
       "A deep dive into how Next.js 19 Server Components, App Router, and React Compiler eliminate client-side JavaScript bloat, boost Core Web Vitals, and maximize conversion rates for modern enterprises.",
-    imagePath: "/why-nextjs-blog.png",
+    imagePath: "/why-nextjs-blog.webp",
     slug: "nextjs-19-enterprise-architecture",
     category: "Next.js & React",
     readTime: "6 min read",
@@ -28,7 +28,7 @@ const BLOGS_DATA = [
     title: "Custom React Builds vs. WordPress: Why High-Growth Brands Switch",
     description:
       "Comparing bespoke Next.js web applications with bloated WordPress setups. Learn why modern startups choose custom CSS variable themes, zero plugin vulnerabilities, and sub-second rendering speeds.",
-    imagePath: "/react-vs-wordpress.png",
+    imagePath: "/react-vs-wordpress.webp",
     slug: "custom-react-vs-wordpress-templates",
     category: "Web Engineering",
     readTime: "5 min read",
@@ -40,7 +40,7 @@ const BLOGS_DATA = [
     title: "How We Engineered a 42% Conversion Lift Using Modern UI Tokens",
     description:
       "A breakdown of high-converting landing page layouts, strategic CTA placements, micro-interactions, and glassmorphic design tokens that convert cold organic traffic into high-value leads.",
-    imagePath: "/conversion-lift.png",
+    imagePath: "/conversion-lift.webp",
     slug: "landing-page-conversion-design-tokens",
     category: "UI/UX Strategy",
     readTime: "4 min read",
@@ -52,7 +52,7 @@ const BLOGS_DATA = [
     title: "Building High-Performance React Native Mobile Apps in 2026",
     description:
       "How to craft fluid, cross-platform Android and iOS mobile applications using React Native. Strategies for light bundle sizes, native thread communication, and 60fps gesture mechanics.",
-    imagePath: "/high-performance.png",
+    imagePath: "/high-performance.webp",
     slug: "react-native-high-performance-mobile-apps",
     category: "Mobile Apps",
     readTime: "7 min read",
@@ -64,7 +64,7 @@ const BLOGS_DATA = [
     title: "Mastering Core Web Vitals 99+ for Top Google Rankings",
     description:
       "Step-by-step technical guide to eliminating Cumulative Layout Shift (CLS), optimizing Largest Contentful Paint (LCP), and structuring Tailwind variables for instant page hydration.",
-    imagePath: "/core-web-vitals.png",
+    imagePath: "/core-web-vitals.webp",
     slug: "mastering-core-web-vitals-99-seo",
     category: "SEO & Growth",
     readTime: "5 min read",
@@ -77,7 +77,7 @@ const BLOGS_DATA = [
       "Architecting Scalable SaaS Engines with Next.js, Prisma & PostgreSQL",
     description:
       "Designing resilient full-stack systems with TanStack Query, automated database connection pooling, type-safe server actions, and seamless deployment on Vercel infrastructure.",
-    imagePath: "/scalable-sass.png",
+    imagePath: "/scalable-sass.webp",
     slug: "scalable-saas-architecture-nextjs-prisma",
     category: "Backend & Systems",
     readTime: "8 min read",
@@ -132,7 +132,6 @@ export default function Blogs() {
 
                   <div className="relative z-10 flex flex-col justify-between h-full">
                     <div className="space-y-5">
-                      {/* Thumbnail Image Box */}
                       {/* Thumbnail Image Box */}
                       <div className="flex h-56 items-center p-6 justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/10 backdrop-blur-md relative">
                         <Image

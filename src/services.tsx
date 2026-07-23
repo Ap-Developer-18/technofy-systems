@@ -10,28 +10,28 @@ const SERVICES_DATA = [
     title: "Web Development",
     description:
       "From sleek websites to powerful web applications, we build fast, scalable, and modern digital experiences tailored to your business goals.",
-    imagePath: "/full-stack-web-architectures.png",
+    imagePath: "/full-stack-web-architectures.webp",
   },
   {
     id: 2,
     title: "E-Commerce & Web Systems",
     description:
       "We build seamless online stores and custom web portals designed to streamline your operations and drive real revenue growth.",
-    imagePath: "/premium-saas.png",
+    imagePath: "/premium-saas.webp",
   },
   {
     id: 3,
     title: "Mobile App Development",
     description:
       "Crafting high-performing iOS and Android apps with smooth user experience and native feel that users love.",
-    imagePath: "/high-end-fluid.png",
+    imagePath: "/high-end-fluid.webp",
   },
   {
     id: 4,
     title: "UI/UX & Interactive Design",
     description:
       "Creating intuitive interfaces and responsive designs that captivate users and elevate your brand identity.",
-    imagePath: "/resilient-infrastructure.png",
+    imagePath: "/resilient-infrastructure.webp",
   },
 ];
 

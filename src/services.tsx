@@ -2,6 +2,7 @@
 
 import React from "react";
 import SectionHeader from "./common/section-header";
+import Image from "next/image";
 
 const SERVICES_DATA = [
   {
@@ -57,11 +58,12 @@ export default function Services() {
             >
               {/* Image Container */}
               <div className="w-full h-50 lg:h-80 p-4 bg-[#f9f9f9] rounded-xl flex items-center justify-center relative overflow-hidden shrink-0">
-                <img
+                <Image
                   src={service.imagePath}
                   alt={service.title}
-                  className="w-full h-full scale-105 object-contain transition-transform duration-300 group-hover:scale-[1.02]"
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 768px) 90vw, 45vw"
+                  className="object-contain transition-transform duration-300 group-hover:scale-[1.02] p-6"
                 />
               </div>
 

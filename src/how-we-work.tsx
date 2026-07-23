@@ -3,6 +3,7 @@
 import React from "react";
 import { Eye, ClipboardList, Layers, Code2, Rocket } from "lucide-react";
 import SectionHeader from "./common/section-header";
+import Image from "next/image";
 
 const STEPS_DATA = [
   {
@@ -84,10 +85,13 @@ export default function HowWeWork() {
             />
           </div>
           <div className="lg:col-span-6 sm:w-4/5 mx-auto">
-            <img
+            <Image
               src="/how-we-work.png"
               alt="how we work"
-              className="w-full contrast-200 object-contain"
+              width={1200}
+              height={706}
+              className="w-full h-auto contrast-200 object-contain"
+              sizes="(max-width: 640px) 100vw, 80vw"
             />
           </div>
         </div>

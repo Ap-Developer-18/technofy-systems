@@ -8,6 +8,7 @@ import { ArrowUpRight, Clock, Calendar } from "lucide-react";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 const BLOGS_DATA = [
   {
@@ -132,15 +133,16 @@ export default function Blogs() {
                   <div className="relative z-10 flex flex-col justify-between h-full">
                     <div className="space-y-5">
                       {/* Thumbnail Image Box */}
+                      {/* Thumbnail Image Box */}
                       <div className="flex h-56 items-center p-6 justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/10 backdrop-blur-md relative">
-                        <img
+                        <Image
                           src={post.imagePath}
                           alt={post.title}
-                          loading="lazy"
-                          className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                          fill
+                          sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 30vw"
+                          className="object-contain p-2 transition-transform duration-500 group-hover:scale-105"
                         />
                       </div>
-
                       {/* Content */}
                       <div className="space-y-3">
                         {/* Meta Info */}

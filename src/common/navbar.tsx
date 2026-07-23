@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Button from "./button";
 import Link from "next/link";
+import Image from "next/image";
 
 const navitems = [
   {
@@ -44,7 +45,7 @@ export default function Navbar() {
         {/* Brand Identity */}
         <div className="shrink-0 pl-4 lg:pl-0">
           <a href="/#" className="font-figtree flex items-center gap-2">
-            <img width={44} height={44} src="/logo.svg" alt="logo" />
+            <Image src="/logo.svg" alt="logo" width={44} height={44} />
             <p className="text-lg font-extrabold leading-[100%] text-neutral-950">
               Technofy <br /> Systems
             </p>

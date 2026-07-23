@@ -3,6 +3,7 @@
 import React from "react";
 import { CheckCircle2 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 // Social Links Array with Vector SVGs
 const SOCIAL_LINKS = [
@@ -72,7 +73,7 @@ export default function Footer() {
             <div className="lg:col-span-5 flex flex-col items-start text-left gap-4">
               <div className="flex items-center gap-2.5">
                 <Link href="#" className="font-figtree flex items-center gap-2">
-                  <img width={44} height={44} src="/logo.svg" alt="logo" />
+                  <Image src="/logo.svg" alt="logo" width={44} height={44} />
                   <p className="text-lg font-extrabold leading-[100%] text-neutral-950">
                     Technofy <br /> Systems
                   </p>
@@ -110,11 +111,13 @@ export default function Footer() {
               </h4>
 
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full overflow-hidden border border-neutral-200 shrink-0">
-                  <img
+                <div className="w-12 h-12 rounded-full overflow-hidden border border-neutral-200 shrink-0 relative">
+                  <Image
                     src="/owner.png"
                     alt="Satish Rawat"
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="48px"
+                    className="object-cover"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -122,10 +125,12 @@ export default function Footer() {
                     <span className="font-poppins text-base font-bold text-neutral-900">
                       Satish Rawat
                     </span>
-                    <img
+                    <Image
                       src="/tick-icon.png"
                       alt="Satish Rawat"
-                      className="w-4 h-4 object-cover"
+                      width={16}
+                      height={16}
+                      className="object-cover"
                     />
                   </div>
                   <span className="font-figtree text-xs text-neutral-500 font-medium">

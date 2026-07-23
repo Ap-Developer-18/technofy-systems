@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { LucideWorkflow, Star } from "lucide-react";
 import SectionHeader from "./common/section-header";
+import Image from "next/image";
 
 // Working CDN Logos
 const TECH_LOGOS = {
@@ -166,11 +167,12 @@ export default function ToolsIntegrations() {
               <div className="hidden sm:block h-10 w-px bg-neutral-100" />
 
               <div className="flex items-start gap-3 w-full sm:w-auto">
-                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-neutral-200 overflow-hidden shrink-0">
-                  <img
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-neutral-200 overflow-hidden shrink-0 relative">
+                  <Image
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=75"
                     alt="Client Review"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <div>
